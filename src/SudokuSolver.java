@@ -25,7 +25,7 @@ public class SudokuSolver {
     }
 
     public SudokuBoard solve(SudokuBoard original) {
-        if(original.getEmptyCoord() == null)
+        if(original.getEmptyCoord() == null && original.isValid())
             return original;
         List<SudokuBoard> childrenBoards = childrenConfigurations(original);
         for(SudokuBoard child: childrenBoards) {

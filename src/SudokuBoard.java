@@ -78,7 +78,7 @@ public class SudokuBoard {
             if(!rowValid(row))
                 return false;
         for(int col = 0; col < DIM; col++)
-            if(!colValid(0))
+            if(!colValid(col))
                 return false;
         for(int startRow = 0; startRow < DIM; startRow+=boxSize)
             for(int startCol = 0; startCol < DIM; startCol+=boxSize)
